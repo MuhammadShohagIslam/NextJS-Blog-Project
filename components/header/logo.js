@@ -1,5 +1,6 @@
+import classes from "./logo.module.css";
 function Logo() {
-    return <h2>All Posts</h2>;
+    return <div className={classes.logo}>MuhammadShohagIslam</div>;
 }
 
 export default Logo;

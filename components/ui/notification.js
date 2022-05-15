@@ -1,4 +1,9 @@
 function Notification() {
-    return <h2>Notification</h2>;
+    return(
+        <div>
+            <h2></h2>
+            <p></p>
+        </div>
+    )
 }
 export default Notification;

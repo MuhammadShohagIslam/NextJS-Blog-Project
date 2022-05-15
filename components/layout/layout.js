@@ -1,13 +1,11 @@
 import { Fragment } from "react";
 import Navigation from "../header/navigation";
-import Footer from './../footer/footer';
+import Footer from "./../footer/footer";
 
 function Layout({ children }) {
     return (
         <Fragment>
-            <header>
-                <Navigation />
-            </header>
+            <Navigation />
             <main>{children}</main>
             <footer>
                 <Footer />

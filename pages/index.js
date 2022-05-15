@@ -1,4 +1,4 @@
-import { Fragment } from "react/cjs/react.production.min";
+import { Fragment } from "react";
 import FeaturePosts from "../components/feature-posts/feature-posts";
 import Hero from "../components/hero/hero";
 

@@ -1,5 +1,8 @@
+import AllPosts from "../../components/posts/all-posts";
+
 function AllPostsPage() {
-    return <h2>All Posts</h2>;
+    const posts = [];
+    return <AllPosts posts={posts} />;
 }
 
 export default AllPostsPage;
