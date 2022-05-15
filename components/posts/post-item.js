@@ -11,9 +11,8 @@ function PostItem({ post }) {
     });
     const linkPath = `/posts/${slug}`;
     const imageSrc = `/images/posts/${slug}/${image}`;
-
     return (
-        <li>
+        <li className={classes.post}>
             <Link href={linkPath}>
                 <a>
                     <div className={classes.image}>
@@ -22,6 +21,8 @@ function PostItem({ post }) {
                             alt={title}
                             width={300}
                             height={300}
+                            layout="responsive"
+                            priority={true}
                         />
                     </div>
                     <div className={classes.content}>

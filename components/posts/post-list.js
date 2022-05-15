@@ -1,5 +1,5 @@
 import PostItem from "./post-item";
-import classes from "./post-item.module.css";
+import classes from "./post-list.module.css";
 
 function PostList({ posts }) {
     return (
