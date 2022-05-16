@@ -7,9 +7,7 @@ function Layout({ children }) {
         <Fragment>
             <Navigation />
             <main>{children}</main>
-            <footer>
-                <Footer />
-            </footer>
+            <Footer />
         </Fragment>
     );
 }

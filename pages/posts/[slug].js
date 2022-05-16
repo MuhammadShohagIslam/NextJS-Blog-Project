@@ -1,19 +1,26 @@
+import { Fragment } from "react";
 import PostContent from "../../components/posts/post-details/post-content";
 import { getPostData, getPostsFiles } from "./../../lib/posts_util";
 
 function PostDetailsPage({ post }) {
-    return <PostContent post={post} />;
+    return (
+        <Fragment>
+            <title>{post.title}</title>
+            <meta name="description" content={post.excerpt} />
+            <PostContent post={post} />
+        </Fragment>
+    );
 }
 
 export async function getStaticProps(context) {
     const { params } = context;
     const { slug } = params;
-    const post = getPostData(`${slug}.md`);
+    const post = getPostData(slug);
     return {
         props: {
             post,
         },
-        revalidate: 600,
+        revalidate: 6000,
     };
 }
 
