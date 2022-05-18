@@ -1,9 +1,4 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//     reactStrictMode: true,
-// };
-
-// module.exports = nextConfig;
 
 module.exports = {
     reactStrictMode: true,
@@ -16,3 +11,9 @@ module.exports = {
         return config;
     },
 };
+
+// const nextConfig = {
+//     reactStrictMode: true,
+// };
+
+// module.exports = nextConfig;
